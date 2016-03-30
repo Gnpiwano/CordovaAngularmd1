@@ -14,6 +14,7 @@
     <preference name="fullscreen" value="true"/>
     <preference name="android-minSdkVersion" value="14"/>
     <preference name="android-installLocation" value="auto"/>
+    <preference name="android-build-tool" value="gradle" />
 
     <!--Plugins -->
     <gap:plugin name="org.apache.cordova.battery-status"/>
@@ -53,7 +54,7 @@
     <access origin="*" />
     <plugin name="cordova-plugin-whitelist" version="1"/>
     <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" />
-    
+
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="geo:*" />
