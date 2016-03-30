@@ -54,7 +54,6 @@ angular.module("ngapp").service("data", function($resource, shared, location){
 
     this.checkForupdates = function() {
         var today = new Date().getDay();
-
         //window.localStorage.removeItem("lastUpdatedDay");
         if(window.localStorage.getItem("lastUpdatedDay")) {
             var lastToday = window.localStorage.getItem("lastUpdatedDay");

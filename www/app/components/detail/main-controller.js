@@ -8,7 +8,7 @@ angular.module("ngapp").controller("detailController", function(shared, menu, la
     $scope.pokemon = shared.currentPokemon;
 
     $scope.init = function() {
-        alert("longitude : " + $scope.pokemon.name + " - " + $scope.pokemon.longitude + " latitude : " + $scope.pokemon.latitude );
+        //alert("longitude : " + $scope.pokemon.name + " - " + $scope.pokemon.longitude + " latitude : " + $scope.pokemon.latitude );
     }
 
 

@@ -1,38 +1,57 @@
-<div md-swipe-right="menu.onSwipe()" md-swipe-left="menu.onSwipe()">
+<div md-swipe-right="menu.onSwipe()" md-swipe-left="menu.onSwipe()" layout='column' layout-fill>
+
 
     <div ng-include="'assets/html/settings_menu.html'"></div>
-    <h1>WTF Testen</h1>
-    <md-content flex layout-padding>
-        <md-content>
-            <md-list>
-                <md-list-item class="md-3-line">
-                    <img src="{{ pokemon.sprites.front_default }}"/>
-                    <div class="md-list-item-text">
-                        <h3>{{ pokemon.name }}</h3>
-                        <b/>
-                        <h4>{{lan.str.pokemonType}}</h4>
-                        <p ng-repeat="t in pokemon.types"> {{ t.type.name }}</p>
-                    </div>
-                    <md-divider md-inset ng-if="!$last"></md-divider>
-                </md-list-item>
-            </md-list>
-        </md-content>
-        <md-content>
-            <md-list-item class="md-3-line">
-                <img src="{{ pokemon.sprites.back_default }}"/>
-                <div class="md-list-item-text">
-                    <h4> {{lan.str.standardInformation}}</h4>
-                    <h5> {{lan.str.baseExperience}} : {{ pokemon.base_experience }}</h5>
-                    <h5> {{lan.str.height}} : {{ pokemon.height }}</h5>
-                    <h5> {{lan.str.weight}} : {{ pokemon.weight }}</h5>
-                    <h5> Pokedex id : {{ pokemon.order }}</h5>
-                </div>
-                <md-divider md-inset ng-if="!$last"></md-divider>
-            </md-list-item>
-        </md-content>
-    </md-content>
 
-    <md-bottom-sheet style="background-color: #F44336 ; height: 36px;" ng-click="goMap()">
-        <h3 style="text-align: center; color: white;" ng-click="startNavigation()">{{lan.str.navigate_to}}</h3>
-    </md-bottom-sheet>
+    <md-content flex class='md-padding'>
+        <md-card>
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">{{ pokemon.name}}</span>
+                    <span class="md-subhead">
+                        <p ng-repeat="t in pokemon.types"> {{ t.type.name }}</p>
+                    </span>
+                </md-card-title-text>
+                <md-card-title-media>
+                    <div class="md-media-lg card-media">
+                        <img src="{{ pokemon.sprites.front_default }}"/>
+                    </div>
+                </md-card-title-media>
+            </md-card-title>
+
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button ng-href="http://www.pokemon.com/nl/pokedex/{{ pokemon.name }}">{{ lan.str.moreInfo }}</md-button>
+            </md-card-actions>
+        </md-card>
+
+        <md-card>
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">{{  }}</span>
+                    <span class="md-subhead">{{lan.str.standardInformation}}
+                        <h5> {{lan.str.baseExperience}} : {{ pokemon.base_experience }}</h5>
+                        <h5> {{lan.str.height}} : {{ pokemon.height }}</h5>
+                        <h5> {{lan.str.weight}} : {{ pokemon.weight }}</h5>
+                        <h5> Pokedex id : {{ pokemon.order }}</h5>
+                    </span>
+                </md-card-title-text>
+                <md-card-title-media>
+                    <div class="md-media-lg card-media">
+                        <img src="{{ pokemon.sprites.back_default }}"/>
+                    </div>
+                </md-card-title-media>
+            </md-card-title>
+            <md-card-content>
+            </md-card-content>
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button ng-href="http://www.pokemon.com/nl/pokedex/{{ pokemon.name }}">{{ lan.str.moreInfo }}</md-button>
+            </md-card-actions>
+        </md-card>
+
+
+    <div flex="10" style="background-color: #F44336;" layout="row" layout-align="center center" ng-click="goMap()">
+        <div>
+            <ng-md-icon icon="pin_drop" style="color:white;" md-48></ng-md-icon>
+        </div>
+    </div>
 </div>

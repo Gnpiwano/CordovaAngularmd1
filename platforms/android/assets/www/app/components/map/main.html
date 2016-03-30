@@ -1,9 +1,23 @@
-<div md-swipe-right="menu.onSwipe()" md-swipe-left="menu.onSwipe()">
+<div md-swipe-right="menu.onSwipe()" md-swipe-left="menu.onSwipe()" layout='column' layout-fill>
+
 
     <div ng-include="'assets/html/settings_menu.html'"></div>
 
-    <ui-gmap-google-map center='map.center' zoom='map.zoom' draggable="true">
-        <ui-gmap-markers models="Markers" coords="'self'" icon="'icon'">
-        </ui-gmap-markers>
-    </ui-gmap-google-map>
+    <md-content flex>
+        <ui-gmap-google-map center='map.center' zoom='map.zoom' draggable="true">
+            <ui-gmap-markers models="Markers" coords="'self'" icon="'icon'">
+            </ui-gmap-markers>
+        </ui-gmap-google-map>
+    </md-content>
 </div>
+
+
+<!--<div md-swipe-right="menu.onSwipe()" md-swipe-left="menu.onSwipe()">-->
+
+    <!--<div ng-include="'assets/html/settings_menu.html'"></div>-->
+
+    <!--<ui-gmap-google-map center='map.center' zoom='map.zoom' draggable="true">-->
+        <!--<ui-gmap-markers models="Markers" coords="'self'" icon="'icon'">-->
+        <!--</ui-gmap-markers>-->
+    <!--</ui-gmap-google-map>-->
+<!--</div>-->

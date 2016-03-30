@@ -5,21 +5,21 @@
 
   <md-content flex class='md-padding'>
     <md-list >
-        <md-list-item class="md-3-line" ng-repeat="pokemon in shared.pokemons track by $index" >
-          <img src="{{ pokemon.sprites.front_default }}"/>
-          <div class="md-list-item-text" layout="column" ng-click="goDetail(pokemon)">
+      <md-list-item class="md-3-line" ng-repeat="pokemon in shared.pokemons track by $index" >
+        <img src="{{ pokemon.sprites.front_default }}"/>
+        <div class="md-list-item-text" layout="column" ng-click="goDetail(pokemon)">
           <h3>{{ pokemon.name }}</h3>
           <h4> {{ pokemon.catched }} </h4>
           <p ng-repeat="t in pokemon.types"> {{ t.type.name }}</p>
-          </div>
-          <div> {{pokemon.caugt }}</div>
-          <md-divider md-inset ng-if="!$last"></md-divider>
-        </md-list-item>
+        </div>
+        <div> {{pokemon.caugt }}</div>
+        <md-divider md-inset ng-if="!$last"></md-divider>
+      </md-list-item>
     </md-list>
 
   </md-content>
 
-  <div flex="10" style="background-color: #F44336;" layout="row" layout-align="center center">
+  <div flex="10" style="background-color: #F44336;" layout="row" layout-align="center center" ng-click="goMap()">
     <div>
       <ng-md-icon icon="pin_drop" style="color:white;" md-48></ng-md-icon>
     </div>
