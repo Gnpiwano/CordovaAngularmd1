@@ -1,10 +1,10 @@
-<md-toolbar flex ng-init='init()' layout-align="center center">
+<md-toolbar flex ng-init='init()' layout-align="center center"  class='md-medium-tall'>
     <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
         <md-button class="md-icon-button " aria-label="Menu" ng-click="menu.toggleRight()">
             <ng-md-icon icon="menu"></ng-md-icon>
         </md-button>
         <p>{{ shared.info.auth }} {{ main.title }}</p>
-        <div style="width: 40px; height: 40px;"></div>
+        <div flex></div>
     </div>
 </md-toolbar>
 

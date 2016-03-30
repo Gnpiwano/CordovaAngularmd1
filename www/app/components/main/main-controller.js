@@ -7,6 +7,7 @@ angular.module("ngapp").controller("mainController", function(shared, menu, lang
     $scope.name = shared.info.auth;
     $scope.menu = menu;
     $scope.lan = language;
+    $scope.shared = shared;
 
     $scope.init = function() {
         language.setLanguage();
