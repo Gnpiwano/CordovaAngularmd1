@@ -1,0 +1,40 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.phonegap.plugins.OrientationLock": {
+            "PACKAGE_NAME": "nl.downsider.hybridmaterial1102"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "nl.downsider.hybridmaterial1102"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "nl.downsider.hybridmaterial1102"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "nl.downsider.hybridmaterial1102"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "nl.downsider.hybridmaterial1102"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "nl.downsider.hybridmaterial1102"
+        },
+        "uk.co.workingedge.phonegap.plugin.launchnavigator": {
+            "PACKAGE_NAME": "nl.downsider.hybridmaterial1102"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "nl.downsider.hybridmaterial1102"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-actionsheet": {
+            "PACKAGE_NAME": "nl.downsider.hybridmaterial1102"
+        }
+    }
+}

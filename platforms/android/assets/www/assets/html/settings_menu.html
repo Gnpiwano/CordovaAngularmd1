@@ -1,0 +1,29 @@
+<md-toolbar flex ng-init='init()' layout-align="center center">
+    <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
+        <md-button class="md-icon-button " aria-label="Menu" ng-click="menu.toggleRight()">
+            <ng-md-icon icon="menu"></ng-md-icon>
+        </md-button>
+        <p>{{ shared.info.auth }} {{ main.title }}</p>
+        <div style="width: 40px; height: 40px;"></div>
+    </div>
+</md-toolbar>
+
+<md-sidenav class="md-sidenav-left" md-component-id="left">
+    <md-toolbar>
+        <h1 class="md-toolbar-tools">{{ lan.str.settings}}</h1>
+    </md-toolbar>
+    <md-list ng-cloak>
+        <md-list-item  ng-click="menu.showPrompt($event)">
+            <ng-md-icon icon="school"></ng-md-icon>
+            <p>{{ lan.str.changeCurrentName }}</p>
+        </md-list-item>
+        <md-list-item ng-href="http://www.pokemon.com/nl/pokedex/">
+            <ng-md-icon icon="settings_ethernet"></ng-md-icon>
+            <p>{{ lan.str.linkMorePokemon}}</p>
+        </md-list-item>
+        <md-list-item ng-click="menu.goProfile()">
+            <ng-md-icon icon="supervisor_account"></ng-md-icon>
+            <p>{{ lan.str.myProfile}}</p>
+        </md-list-item>
+    </md-list>
+</md-sidenav>

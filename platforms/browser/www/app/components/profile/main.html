@@ -1,0 +1,23 @@
+<div md-swipe-right="menu.onSwipe()" md-swipe-left="menu.onSwipe()">
+
+    <div ng-include="'assets/html/settings_menu.html'"></div>
+
+    <md-content layout="column">
+        <img src="{{ pictureSrc }}" style="height: 40vh; width:auto; margin-left: auto; margin-right: auto;" ng-click="updateProfilePicture()" />
+    </md-content>
+
+    <md-list style="overflow-y: scroll ;height: 40vh;" layout="column">
+        <md-list-item class="md-3-line" layout="row">
+            <h3>Catched Pokemon</h3>
+        </md-list-item>
+
+        <md-list-item class="md-3-line" ng-repeat="group in pokemonGroups" layout="row">
+            <div ng-repeat="pokemon in group">
+                <img src="{{ pokemon.sprites.front_default }}" />
+            </div>
+        </md-list-item>
+    </md-list>
+
+    <div class="bottom_button">
+    </div>
+</div>

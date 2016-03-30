@@ -1,0 +1,25 @@
+<div md-swipe-right="menu.onSwipe()" md-swipe-left="menu.onSwipe()">
+
+  <div ng-include="'assets/html/settings_menu.html'"></div>
+
+  <md-content>
+    <md-list style="overflow-y: scroll ;height: 88vh;" layout="column">
+      <md-list-item class="md-3-line" ng-repeat="pokemon in pokemons track by $index">
+        <img src="{{ pokemon.sprites.front_default }}"/>
+        <div class="md-list-item-text" ng-click="goDetail(pokemon)">
+          <h3>{{ pokemon.name }}</h3>
+          <h4> {{ pokemon.catched }} </h4>
+          <p ng-repeat="t in pokemon.types"> {{ t.type.name }}</p>
+        </div>
+        <div> {{pokemon.caugt }}</div>
+        <md-divider md-inset ng-if="!$last"></md-divider>
+      </md-list-item>
+    </md-list>
+  </md-content>
+
+  <md-bottom-sheet style="background-color: #F44336 ; height: 36px;" ng-click="goMap()">
+    <img class="center" src="assets/images/maps.png" style="margin-top: 5px; height: 80%; width: auto; margin-left: 48%;"/>
+  </md-bottom-sheet>
+
+
+</div>

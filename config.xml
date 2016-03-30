@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="nl.downsider.hybridmaterial1617" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Hybrid MD1 16</name>
+    <description> Cordova-AngularJS-angularMaterial Seed. </description>
+
+    <author email="" href="https://github.com/mario-aleo"> MarioAleo </author>
+    <!-- Main -->
+    <content src="index.html"/>
+
+    <!--Preferences -->
+    <preference name="permissions" value="none"/>
+    <preference name="orientation" value="default"/>
+    <preference name="target-device" value="universal"/>
+    <preference name="fullscreen" value="true"/>
+    <preference name="android-minSdkVersion" value="14"/>
+    <preference name="android-installLocation" value="auto"/>
+
+    <!--Plugins -->
+    <gap:plugin name="org.apache.cordova.battery-status"/>
+    <gap:plugin name="org.apache.cordova.camera"/>
+    <gap:plugin name="org.apache.cordova.media-capture"/>
+    <gap:plugin name="org.apache.cordova.console"/>
+    <gap:plugin name="org.apache.cordova.contacts"/>
+    <gap:plugin name="org.apache.cordova.device"/>
+    <gap:plugin name="org.apache.cordova.device-motion"/>
+    <gap:plugin name="org.apache.cordova.device-orientation"/>
+    <gap:plugin name="org.apache.cordova.dialogs"/>
+    <gap:plugin name="org.apache.cordova.file"/>
+    <gap:plugin name="org.apache.cordova.file-transfer"/>
+    <gap:plugin name="org.apache.cordova.geolocation"/>
+    <gap:plugin name="org.apache.cordova.globalization"/>
+    <gap:plugin name="org.apache.cordova.inappbrowser"/>
+    <gap:plugin name="org.apache.cordova.media"/>
+    <gap:plugin name="org.apache.cordova.network-information"/>
+    <gap:plugin name="org.apache.cordova.splashscreen"/>
+    <gap:plugin name="org.apache.cordova.vibration"/>
+    <!-- Icon-->
+
+    <!-- -->
+
+    <!--<feature name="http://api.phonegap.com/1.0/battery"/>-->
+	<!--<feature name="http://api.phonegap.com/1.0/camera"/>-->
+	<!--<feature name="http://api.phonegap.com/1.0/geolocation"/>-->
+	
+
+
+
+
+
+
+	
+    <access origin="*" />
+    <plugin name="cordova-plugin-whitelist" version="1"/>
+
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="geo:*" />
+    <!--<platform name="android">-->
+        <!--<allow-intent href="market:*" />-->
+    <!--</platform>-->
+    <!--<platform name="ios">-->
+        <!--<allow-intent href="itms:*" />-->
+        <!--<allow-intent href="itms-apps:*" />-->
+    <!--</platform>-->
+</widget>
