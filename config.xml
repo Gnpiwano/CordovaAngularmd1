@@ -34,6 +34,7 @@
     <gap:plugin name="org.apache.cordova.network-information"/>
     <gap:plugin name="org.apache.cordova.splashscreen"/>
     <gap:plugin name="org.apache.cordova.vibration"/>
+
     <!-- Icon-->
 
     <!-- -->
@@ -51,7 +52,8 @@
 	
     <access origin="*" />
     <plugin name="cordova-plugin-whitelist" version="1"/>
-
+    <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" />
+    
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="geo:*" />

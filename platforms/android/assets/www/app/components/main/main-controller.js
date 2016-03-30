@@ -16,10 +16,10 @@ angular.module("ngapp").controller("mainController", function(shared, menu, lang
 
     $scope.goDetail = function(pokemon) {
         shared.currentPokemon = pokemon;
-        location.replace("#/map");
+        location.replace("#/detail");
     }
 
     $scope.goMap = function() {
-        location.replace("#/detail");
+        location.replace("#/map");
     }
 });

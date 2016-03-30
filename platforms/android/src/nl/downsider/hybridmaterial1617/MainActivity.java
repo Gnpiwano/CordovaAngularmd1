@@ -17,7 +17,7 @@
        under the License.
  */
 
-package nl.downsider.hybridmaterial1102;
+package nl.downsider.hybridmaterial1617;
 
 import android.os.Bundle;
 import org.apache.cordova.*;

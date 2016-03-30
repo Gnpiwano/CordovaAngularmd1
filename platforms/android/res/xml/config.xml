@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="nl.downsider.hybridmaterial1102" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="nl.downsider.hybridmaterial1617" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
     <feature name="OrientationLock">
         <param name="android-package" value="com.plugin.phonegap.OrientationLock" />
@@ -30,7 +30,7 @@
     <feature name="LaunchNavigator">
         <param name="android-package" value="uk.co.workingedge.phonegap.plugin.LaunchNavigator" />
     </feature>
-    <name>Hybrid MD1 15</name>
+    <name>Hybrid MD1 16</name>
     <description> Cordova-AngularJS-angularMaterial Seed. </description>
     <author email="" href="https://github.com/mario-aleo"> MarioAleo </author>
     <content src="index.html" />
