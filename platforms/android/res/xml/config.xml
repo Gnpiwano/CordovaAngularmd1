@@ -40,6 +40,7 @@
     <preference name="fullscreen" value="true" />
     <preference name="android-minSdkVersion" value="14" />
     <preference name="android-installLocation" value="auto" />
+    <preference name="android-build-tool" value="gradle" />
     <gap:plugin name="org.apache.cordova.battery-status" />
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.media-capture" />
